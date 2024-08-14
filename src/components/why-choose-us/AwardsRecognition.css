@@ -1,0 +1,37 @@
+.awards-recognition {
+  background-color: rgb(214, 233, 249);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.awards-recognition h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.award-item {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.award-item h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.award-item p {
+  color: #555;
+  margin: 0.5rem 0;
+}
