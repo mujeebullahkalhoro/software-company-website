@@ -1,0 +1,16 @@
+.serviceTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    color: #1a245d;
+    margin-top: 3rem;
+}
+
+@media(max-width:450px){
+    .glintservice{
+        font-size: 1.5rem;
+    }
+}

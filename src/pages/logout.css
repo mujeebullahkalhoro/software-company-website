@@ -1,0 +1,9 @@
+.logout{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top left , #438393 , #5ca6bb);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

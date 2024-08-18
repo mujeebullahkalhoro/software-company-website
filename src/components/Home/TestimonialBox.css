@@ -1,0 +1,26 @@
+.Testimonial-Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.Testimonial-Box img{
+    height: 220px;
+    border-radius: 1rem;
+}
+.style{
+    width: 240px;
+    font-style:italic ;
+    color:  #053a48;
+}
+.name{
+    font-size: 1rem;
+    color:  #053948c6;
+}
+.message-icon{
+    color:  #053a48;
+    font-size: 1.5rem;
+}

@@ -30,21 +30,22 @@ function Header() {
           <NavLink to="/vacancy" className={({ isActive }) => isActive ? 'nav-item active-nav-item' : 'nav-item'} onClick={toggleMenu}>Hiring Vacancy</NavLink>
         </div>
 
+        
+
         <div className='Search-Section'>
-             <input type="text" className='search-input' placeholder="Search here" />
+             <input type="text" className='search-input' placeholder="Search Services" />
             <button className='search-button'>
                     <i className="fa-solid fa-magnifying-glass"></i>
             </button>
        </div>
 
-
-        {/* Hamburger Icon */}
-        <div className='hamburger' onClick={toggleMenu}>
+       {/* Hamburger Icon */}
+       <div className='hamburger' onClick={toggleMenu}>
+        <h2 className='menu'>Menu</h2>
           <div className={`bar ${isOpen ? 'active' : ''}`}></div>
           <div className={`bar ${isOpen ? 'active' : ''}`}></div>
           <div className={`bar ${isOpen ? 'active' : ''}`}></div>
         </div>
-
       </nav>
     </header>
   );
