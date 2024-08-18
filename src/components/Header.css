@@ -1,6 +1,6 @@
 /* Header Styling */
 header {
-    width: 100vw;
+    width: 100%;
     background-color: #f8f9fa; /* Lighter background for a cleaner look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     padding: 10px 0;

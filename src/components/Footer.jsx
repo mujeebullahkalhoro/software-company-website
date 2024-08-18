@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -13,7 +14,7 @@ export default function Footer() {
   return (
     <div className="footer-containner">
       <div className="text-box">
-        <h1 className="color-white">UTOUCH</h1>
+        <h1 className="color-white">Glint</h1>
         <p className="width color">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
           ducimus iure sequi ut cumque? Veritatis debitis, magnam et dolore,
@@ -21,7 +22,7 @@ export default function Footer() {
           totam.
         </p>
         <p className="color-white">
-          <b>LEARN MORE ABOUT UTOUCH</b>
+          <b>LEARN MORE ABOUT Glint</b>
         </p>
       </div>
       <div className="links-box">
@@ -30,12 +31,10 @@ export default function Footer() {
           <h2 className="color-white">Links</h2>
         </div>
         <div className="links color">
-          <a href="#">Home</a>
-          <a href="#">Company</a>
-          <a href="#">Products</a>
-          <a href="#">Events</a>
-          <a href="#">Pricing</a>
-          <a href="#">News</a>
+        <NavLink to="/">Home</NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/choose">Why Choose Us</NavLink>
+          <NavLink to="/vacancy">Hiring Vacancy</NavLink>
         </div>
       </div>
       <div className="contactus-box">

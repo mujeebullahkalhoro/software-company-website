@@ -1,0 +1,54 @@
+.company-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(214, 233, 249);
+    width: 100%;
+    height: auto;
+
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    flex:1;
+    padding: 2rem;
+    margin-left: 7rem;
+
+}
+.img-box{
+    padding-top: 2rem;
+    flex: 1;
+    margin-left: 7rem;
+
+}
+.image-box img{
+    /* flex: 1; */
+    height: 20rem;
+    width: 7rem;
+   
+  
+  
+}
+/* responsive */
+@media screen  and (max-width:765px) {
+
+    .company-intro{
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: rgb(214, 233, 249);
+        width: 100%;
+        height: auto;
+     */
+    }
+}
