@@ -10,7 +10,7 @@ export default function layout() {
     <main className="content">
       <Outlet />
     </main>
-    {/* <Footer /> */}
+    <Footer />
   </div>
   )
 }
