@@ -1,0 +1,93 @@
+/* General Styling */
+.profile-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem;
+  color: #1a245d;
+}
+
+.section {
+  margin: 20px 0;
+  padding: 25px;
+  background-color: #5c85936b;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 4px 8px #1b5665;
+}
+
+
+.section-name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color:  #1a245d;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+
+.user-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+
+
+/* Form Styling */
+.formDiv {
+  margin-top: 1rem;
+  margin-bottom: 20px;
+}
+
+.dashInput {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #1a245d;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submitted-projects ul, .notifications ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1rem;
+}
+
+.submitted-projects ul li::before, .notifications ul li::before {
+  content: '•';
+  color:#1a245d;
+  padding-right: 10px;
+  font-size: 1.2rem;
+}
+
+.notifications ul li::before {
+  content: '🔔';
+  padding-right: 0.5rem;
+}
+
+/* Support Section */
+.support a {
+  color:#1a245d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.support a:hover {
+  text-decoration: underline;
+}

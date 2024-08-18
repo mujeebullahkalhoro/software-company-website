@@ -5,3 +5,138 @@
     font-weight: bolder;
     font-size: large;
 }
+.ActionButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.learn-more,.Sign-in{
+    width: 11rem;
+    height: 3rem;
+    border-radius: 5px;
+    background-color:  #2c8196;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.learn-more:hover,
+.Sign-in:hover{
+    border: 1.2px solid  #151f23;
+    background-color:  #0a5d72;
+}
+
+@media only screen and (max-width:450px){
+    .learn-more,
+    .Sign-in{
+        width: 8rem;
+    }
+}
+
+.webButton,
+.appButton,
+.uiButton{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color:  #2c8196;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.webButton:hover,
+.appButton:hover,
+.uiButton:hover{
+    border: 1.2px solid  #151f23;
+    background-color:  #0a5d72;
+}
+
+
+.Submit{
+    background-color:  #2c8196;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 120%;
+  padding: 10px;  
+  border:none;
+  border-radius: 5px;
+font-size: 0.999rem;
+
+}
+.Submit:hover{
+    background-color:  #0a5d72;
+    border: 1.2px solid  #151f23;
+}
+.sign-in{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color:  #2c8196;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.sign-in:hover{
+    background-color:  #0a5d72;
+    border: 1.2px solid  #151f23;
+}
+.signInBtn{
+    background-color:  #2c8196;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 120%;
+  padding: 10px;  
+  border:none;
+  border-radius: 5px;
+font-size: 0.999rem;
+margin-top: 0.8rem;
+}
+.signInBtn:hover{
+    background-color:  #0a5d72;
+    border: 1.2px solid  #151f23;
+}
+
+.editBtn,.submitProjectBtn {
+    background-color:  #2c8196;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .editBtn:hover,
+  .submitProjectBtn:hover {
+    background-color:  #0a5d72;
+    border: 1.2px solid  #151f23;
+  }
+
+  .logoutBtn{
+    background-color:  #2c8196;
+    margin-left: 0.5rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    color: white;
+  }
+  .logoutBtn:hover{
+    background-color:  #0a5d72;
+    border: 1.2px solid  #151f23;
+  }
+
+  @media (max-width:400px){
+    .logoutBtn{
+        margin-top: 0.5rem;
+    }
+  }

@@ -1,0 +1,74 @@
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left , #438393 , #5ca6bb);
+}
+
+.signin-inner-box{
+    height: 380px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 90px;
+    padding-left: 30px;
+    background: linear-gradient(to top left, rgba(208, 223, 236, 0.603),#becfe1fb );
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px  #1a245d;
+    z-index: 2;
+}
+.signin-header h1{
+    font-size: 2.6rem;
+    color: #1a245d;
+}
+.signin-header p{
+    font-size: 0.8rem;
+    color: #1a245d;
+}
+.signin-body{
+    margin :1rem 0;
+}
+.signin-body p{
+    margin: 5px 0;
+}
+.signin-body p label{
+   display: block;
+   padding: 4px 0;
+   font-weight: bold;
+   color:#1a245d;
+}
+
+.signin-body p input{
+    width: 120%;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    font-size: 0.999rem;
+}
+ 
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right,#ffffff33,#ffffff);
+    position: absolute;
+
+}
+.c1{
+    top: 80px;
+    left: 40px;
+}
+.c2{
+    bottom: 80px;
+    right: 40px;
+}
+
+@media (max-width:450px){
+    .signin-inner-box{
+        width: 95%;
+    }
+}
+
+
