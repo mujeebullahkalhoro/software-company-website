@@ -1,9 +1,12 @@
 .ftr-btn{
     border-radius: 3rem;
     height: 4rem;
-    background-color: rgb(25, 196, 25);
+    background-color:rgb(188, 206, 219); 
     font-weight: bolder;
     font-size: large;
+}
+.ftr-btn:hover{
+    background-color: rgb(155, 188, 211);
 }
 .ActionButtons{
     display: flex;

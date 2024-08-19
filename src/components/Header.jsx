@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +9,22 @@ function Header() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const navigate= useNavigate();
+
+  const handleContactClick=()=>{
+
+    navigate("/");
+
+    setTimeout(()=>{
+      const FooterSection = document.getElementById("footerId");
+
+      if(FooterSection){
+        FooterSection.scrollIntoView({behavior:"smooth"});
+      }
+    },0);
+  }
+
 
   return (
     <header>
@@ -24,7 +41,7 @@ function Header() {
 
         <div className={`Nav-Items ${isOpen ? 'active' : ''}`}>
           <NavLink to="/" className={({ isActive }) => isActive ? 'nav-item active-nav-item' : 'nav-item'} onClick={toggleMenu}>Home</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => isActive ? 'nav-item active-nav-item' : 'nav-item'} onClick={toggleMenu}>Contact Us</NavLink>
+          <NavLink to="/" className={({ isActive }) => isActive ? 'nav-item' : 'nav-item'} onClick={handleContactClick}>Contact Us</NavLink>
           <NavLink to="/choose" className={({ isActive }) => isActive ? 'nav-item active-nav-item' : 'nav-item'} onClick={toggleMenu}>Why Choose Us</NavLink>
           <NavLink to="/services" className={({ isActive }) => isActive ? 'nav-item active-nav-item' : 'nav-item'} onClick={toggleMenu}>Services</NavLink>
           <NavLink to="/vacancy" className={({ isActive }) => isActive ? 'nav-item active-nav-item' : 'nav-item'} onClick={toggleMenu}>Hiring Vacancy</NavLink>

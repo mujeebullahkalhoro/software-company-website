@@ -1,11 +1,12 @@
 .image-Container{
-    margin-top: 1.3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     object-fit: contain;
+    background-color: rgb(214, 233, 249);
+    border-radius: 10px;
 }
 .image-Container img{
     width: 80%;

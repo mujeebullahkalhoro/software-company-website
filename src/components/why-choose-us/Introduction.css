@@ -7,13 +7,15 @@
     background-color: rgb(214, 233, 249);
     width: 100%;
     height: auto;
-
+    color: #1a245d;
 }
 .headings{
+    color: #1a245d;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
+
 .intro{
     display: flex;
     flex-direction: column;
@@ -27,28 +29,36 @@
     padding-top: 2rem;
     flex: 1;
     margin-left: 7rem;
-
 }
 .image-box img{
     /* flex: 1; */
     height: 20rem;
     width: 7rem;
-   
-  
-  
+    border-radius: 10px;
 }
 /* responsive */
-@media screen  and (max-width:765px) {
+@media screen  and (max-width:768px) {
 
     .company-intro{
         /* display: flex; */
         flex-direction: column;
-        /* justify-content: center;
+        text-align: center;
+         justify-content: center;
         align-items: center;
-        gap: 1rem;
-        background-color: rgb(214, 233, 249);
+    }
+    .intro{
+        margin-left: 0rem;
+    }
+    .img-box{
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width:400px){
+    .image-container{
+        width: 95%;
+    }
+    .image-container img{
         width: 100%;
-        height: auto;
-     */
     }
 }

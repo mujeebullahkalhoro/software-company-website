@@ -7,7 +7,7 @@ export default function Introduction() {
           <h1>Why choose Glint Tech</h1>
           <h2>Empowering Innovation with Cutting-Edge Technology</h2>
         </div>
-        <p>
+        <p className='paraColour'>
          <b> Welcome to GlintTech!</b> We are more than just a technology company; we
           are your partners in innovation. With a deep understanding of the
           ever-evolving tech landscape, we are dedicated to delivering
@@ -17,7 +17,9 @@ export default function Introduction() {
         </p>
       </div>
       <div className='img-box'>
-      <img className='image' src="src/assets/about1.png" alt="" />
+        <div className='image-container'>
+        <img className='image' src="src/assets/about1.png" alt="" />
+        </div>
       </div>
       
     

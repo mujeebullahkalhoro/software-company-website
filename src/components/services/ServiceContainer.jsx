@@ -2,7 +2,7 @@ import './ServiceContainer.css';
 export default function ServiceContainer({ image, heading, text }) {
   return (
     <div className="service-container">
-      <h1>{heading}</h1>
+      <h1 className='service-heading'>{heading}</h1>
 
       <div className="service-box">
         <div className='image'>

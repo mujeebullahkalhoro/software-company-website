@@ -4,11 +4,12 @@
   margin: 2rem auto;
   border-radius: 8px;
   max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.29);
+  color: #1a245d;
 }
 
 .awards-recognition h1 {
-  color: #333;
+  color: #1a245d;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -27,11 +28,11 @@
 }
 
 .award-item h3 {
-  color: #007bff;
+  color: #1a245d;
   margin-bottom: 0.5rem;
 }
 
 .award-item p {
-  color: #555;
+  color: #1a245d;
   margin: 0.5rem 0;
 }

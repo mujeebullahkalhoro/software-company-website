@@ -12,14 +12,13 @@ import Button from "./base-components/Button";
 
 export default function Footer() {
   return (
-    <div className="footer-containner">
+    <div className="footer-containner" id="footerId">
       <div className="text-box">
         <h1 className="color-white">Glint</h1>
         <p className="width color">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          ducimus iure sequi ut cumque? Veritatis debitis, magnam et dolore,
-          vitae accusamus deserunt ab eum id beatae praesentium sunt dolores
-          totam.
+        GlintTEch: Elevating your digital presence with
+expert Web and Mobile Development, Data Analysis,
+Graphics Design, UI/UX Design, and Video Animation.
         </p>
         <p className="color-white">
           <b>LEARN MORE ABOUT Glint</b>
@@ -43,26 +42,26 @@ export default function Footer() {
         </div>
         <div>
           <div>
-            <FontAwesomeIcon className="color-white" icon={faPhone} />
-            <span className="color"> 64748746384883</span>
+            <FontAwesomeIcon className="color-white hover-color" icon={faPhone} />
+            <span className="color number"> 64748746384883</span>
             <br />
           </div>
           <br />
           <div>
-            <FontAwesomeIcon className="color-white" icon={faEnvelope} />
-            <span className="color"> softtechcompany@gmail.com</span>
+            <FontAwesomeIcon className="color-white hover-color" icon={faEnvelope} />
+            <span className="color email"> softtechcompany@gmail.com</span>
           </div>
         </div>
         <br />
         <Button title="SEND A  MESSAGE" style="ftr-btn" />
         <br />
         <div className="follow-box">
-          <span className="color">
-            <b>Follows Us:</b>
+          <span className="color follow">
+            Follows Us
           </span>
-          <FontAwesomeIcon className="color-white" icon={faFacebook} />
-          <FontAwesomeIcon className="color-white" icon={faTwitter} />
-          <FontAwesomeIcon className="color-white" icon={faGoogle} />
+          <FontAwesomeIcon className="color-white hover-color" icon={faFacebook} />
+          <FontAwesomeIcon className="color-white hover-color" icon={faTwitter} />
+          <FontAwesomeIcon className="color-white hover-color" icon={faGoogle} />
         </div>
       </div>
     </div>
