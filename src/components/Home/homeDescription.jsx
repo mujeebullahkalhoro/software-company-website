@@ -16,7 +16,7 @@ export default function HomeDescription() {
         </div>
 
         <div className='ActionButtons'>
-            <Button title={"learn more"} style={"learn-more"}  />
+            <Link to="/choose" ><Button title={"learn more"} style={"learn-more"}  /></Link>
            <Link to='/signUp' ><Button title={"Sign in"} style={"Sign-in"} /></Link>
         </div>
     </div>

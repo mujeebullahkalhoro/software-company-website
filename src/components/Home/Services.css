@@ -9,6 +9,9 @@
     flex-wrap: wrap;
     background-color: rgb(214, 233, 249);
 }
+.services-section a{
+    text-decoration: none;
+}
 
 @media (max-width:580px){
     .services-section{
