@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 import { useNavigate } from 'react-router-dom';
-import Logo from '../../assets/Logo.jpeg'
+import Logo from '../assets/Logo.jpeg';
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
