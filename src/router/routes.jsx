@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "../layouts/Layout";
 import Home from "../pages/home";
 import Signup from "../pages/Signup";
@@ -8,50 +8,46 @@ import Logout from "../pages/Logout";
 import WhyChooseUs from "../pages/WhyChooseUs";
 import Services from "../pages/Services";
 import Hiring from "../pages/Hiring";
-const router=createBrowserRouter([
 
-    {
-    path:'/',
+const router = createHashRouter([
+  {
+    path: "/",
     element: <Layout />,
-    children:[
-        {
-            path:'/',
-            element:<Home />,
-        },
-        {
-            path:'/choose',
-            element:<WhyChooseUs />
-        },
-        {
-            path:'/services',
-            element:<Services/>
-        }
-        ,
-        {
-            path:'/vacancy',
-            element:<Hiring/>
-        },
-        {
-            path:"profile",
-            element:<ProfilePortal />
-        }
-    ]
-    },
-    {
-        path:'signUp',
-        element:<Signup />,
-    },
-    {
-        path:"signin",
-        element:<Signin />,
-    },
-    {
-        path:"logout",
-        element:<Logout />
-    }
-   
-
-
-])
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/choose",
+        element: <WhyChooseUs />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/vacancy",
+        element: <Hiring />,
+      },
+      {
+        path: "profile",
+        element: <ProfilePortal />,
+      },
+    ],
+  },
+  {
+    path: "signUp",
+    element: <Signup />,
+  },
+  {
+    path: "signin",
+    element: <Signin />,
+  },
+  {
+    path: "logout",
+    element: <Logout />,
+  },
+]);
 
 export default router;
