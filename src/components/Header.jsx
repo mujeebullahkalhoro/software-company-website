@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 import { useNavigate } from 'react-router-dom';
+import Logo from '../../assets/Logo.jpeg'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ function Header() {
       <nav className='navbar'>
         <div className='Logo-Section'>
           <Link to="/">
-            <img className="logo-pic" src=".\src\assets\Logo.jpeg" alt="Logo" />
+          <img className="logo-pic" src={Logo} alt="Logo" />
           </Link>
           <div className='company-name'>
             <h3>GlintTech</h3>
