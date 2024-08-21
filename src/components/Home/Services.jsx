@@ -1,46 +1,44 @@
-import React from 'react'
+import React from 'react';
 import './Services.css';
 import ServicesBox from './ServicesBox';
-import './ServicesBox.css'
+import './ServicesBox.css';
 import '../base-components/Button.css';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+
+// Import images
+import webImage from '../assets/web.jpeg';
+import appImage from '../assets/app.jpeg';
+import uiImage from '../assets/ui.jpeg';
 
 export default function ServicesSection() {
   return (
     <div className='services-section'>
+      <Link to="/services"> 
+        <ServicesBox
+          logo={webImage}
+          serviceTitle={'Web Development'}
+          btnTitle={"Find More"}
+          btnStyle={"webButton"}
+        />
+      </Link>
 
       <Link to="/services"> 
         <ServicesBox
-        logo={'./src/assets/web.jpeg'}
-        serviceTitle={'Web Development'}
-        btnTitle={"Find More"}
-        btnStyle={"webButton"}
-         />
-         </Link>
-
-         <Link to="/services"> 
-        <ServicesBox
-        logo={'./src/assets/app.jpeg'}
-        serviceTitle={'App Development'}
-        btnTitle={"Find More"}
-        btnStyle={"appButton"}
+          logo={appImage}
+          serviceTitle={'App Development'}
+          btnTitle={"Find More"}
+          btnStyle={"appButton"}
         />
-         </Link>
+      </Link>
 
-<Link to="/services"> 
+      <Link to="/services"> 
         <ServicesBox
-        logo={'./src/assets/ui.jpeg'}
-        serviceTitle={'UI/UX'}
-        btnTitle={"Find More"}
-        btnStyle={"uiButton"}
-         />
-          </Link>
-
-      
-
-        
-         
-
-      </div>
-  )
+          logo={uiImage}
+          serviceTitle={'UI/UX'}
+          btnTitle={"Find More"}
+          btnStyle={"uiButton"}
+        />
+      </Link>
+    </div>
+  );
 }
